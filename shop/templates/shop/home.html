@@ -1,4 +1,6 @@
+
 {% extends 'shop/base.html' %}
+{% if user.is_authenticated %} }   
 {% block content %}
         <!-- Header-->
         <header class="bg-dark py-5">
@@ -51,7 +53,7 @@
                                     </ul>
                             </div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://cdn.dxomark.com/wp-content/uploads/medias/post-155689/Apple-iPhone-15-Pro-Max_-blue-titanium_featured-image-packshot-review.jpg" alt="..." />
+                            <img class="card-img-top" src="{{ product.image.url }}" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -92,3 +94,4 @@
         
         {% endblock %}       
 
+{% endif %}

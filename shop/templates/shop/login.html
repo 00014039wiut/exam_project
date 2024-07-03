@@ -91,32 +91,37 @@
       </div>
       <!-- SVG Image End -->
 
-      <!-- Form Start -->
-      <div class="tengah">
-        <div class="login">
-          <label>
-            <div class="fas fa-user"></div>
-            <input
-              class="username"
-              type="text"
-              autocomplete="on"
-              placeholder="Username"
-            />
-          </label>
-          <label>
-            <div class="fas fa-lock"></div>
-            <input
-              class="password"
-              type="password"
-              autocomplete="off"
-              placeholder="password"
-            />
-            <button class="password-button">show</button>
-          </label>
+      <form method="post">
+          {% csrf_token %}
+       
+        <div class="tengah">
+            <div class="login">
+            <label>
+                <div class="fas fa-user"></div>
+                <input
+                class="username"
+                type="email"
+                autocomplete="on"
+                placeholder="Email"
+                name="email"
+                />
+            </label>
+            <label>
+                <div class="fas fa-lock"></div>
+                <input
+                class="password"
+                type="password"
+                autocomplete="off"
+                placeholder="password"
+                name="password"
+                />
+                <button class="password-button">show</button>
+                </label>
             
-          <button class="login-button">sign in</button>
+            <button class="login-button">sign in</button>
+            </div>
         </div>
-      </div>
+      </form>
 
       <!-- Form End -->
 
@@ -124,7 +129,7 @@
       <div class="footer">
         <p>
           Don't have account yet?
-          <a class="footer-a" href="registrasi.html">Sign Up</a>
+          <a class="footer-a" href="{% url 'register' %}">Sign Up</a>
         </p>
       </div>
     </div>
