@@ -3,8 +3,9 @@ from django.template import RequestContext
 from shop.forms import ProductForm
 from shop.models import Category
 
-
 # Create your views here.
+# shop/views.py
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def product_list(request):
@@ -12,9 +13,19 @@ def product_list(request):
     if searched:
         products_list = Product.objects.filter(name__icontains=searched)
     else:
+
         products_list = Product.objects.all()
 
     categories_list = Category.objects.all()
+    paginator = Paginator(products_list, 4)
+    page = request.GET.get('page')
+
+    try:
+        products_list = paginator.page(page)
+    except PageNotAnInteger:
+        products_list = paginator.page(1)
+    except EmptyPage:
+        products_list = paginator.page(paginator.num_pages)
 
     context = {'products_list': products_list,
                'categories_list': categories_list}

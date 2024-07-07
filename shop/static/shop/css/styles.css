@@ -10834,3 +10834,115 @@ textarea.form-control-lg {
     right: 0;
     left: auto;
 }
+.card-footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.btn-falcon-default {
+    background-color: #fff; /* White background for buttons */
+    border: 1px solid #dee2e6; /* Light gray border */
+    color: #6c757d; /* Gray text color */
+}
+
+.btn-falcon-default:hover,
+.btn-falcon-default:focus {
+    background-color: #e9ecef; /* Light gray background on hover */
+    color: #495057; /* Darker gray text color */
+}
+
+.btn-falcon-default.active,
+.btn-falcon-default.text-primary {
+    background-color: #007bff; /* Primary color background */
+    border-color: #007bff; /* Primary color border */
+    color: #fff; /* White text color */
+}
+
+.btn-falcon-default:disabled {
+    background-color: #e9ecef; /* Light gray background */
+    border-color: #e9ecef; /* Light gray border */
+    color: #adb5bd; /* Light gray text color */
+}
+
+a.btn-falcon-default {
+    text-decoration: none; /* Remove underline from links */
+}
+
+a.btn-falcon-default:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.card-footer .btn {
+    margin: 0 5px; /* Horizontal spacing between buttons */
+}
+
+.card-footer .btn span.fas {
+    font-size: 12px; /* Font size for icons */
+}
+
+/* Tooltip styling */
+.tooltip-inner {
+    background-color: #343a40; /* Dark background for tooltip */
+    color: #fff; /* White text color */
+}
+
+.tooltip-arrow {
+    border-top-color: #343a40; /* Dark border for tooltip arrow */
+    border-bottom-color: #343a40;
+}
+.card-footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.btn-falcon-default {
+    background-color: #fff; /* White background for buttons */
+    border: 1px solid #dee2e6; /* Light gray border */
+    color: #6c757d; /* Gray text color */
+}
+
+.btn-falcon-default:hover,
+.btn-falcon-default:focus {
+    background-color: #e9ecef; /* Light gray background on hover */
+    color: #495057; /* Darker gray text color */
+}
+
+.btn-falcon-default.active,
+.btn-falcon-default.text-primary {
+    background-color: #007bff; /* Primary color background */
+    border-color: #007bff; /* Primary color border */
+    color: #fff; /* White text color */
+}
+
+.btn-falcon-default:disabled {
+    background-color: #e9ecef; /* Light gray background */
+    border-color: #e9ecef; /* Light gray border */
+    color: #adb5bd; /* Light gray text color */
+}
+
+a.btn-falcon-default {
+    text-decoration: none; /* Remove underline from links */
+}
+
+a.btn-falcon-default:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.card-footer .btn {
+    margin: 0 5px; /* Horizontal spacing between buttons */
+}
+
+.card-footer .btn span.fas {
+    font-size: 12px; /* Font size for icons */
+}
+
+/* Tooltip styling */
+.tooltip-inner {
+    background-color: #343a40; /* Dark background for tooltip */
+    color: #fff; /* White text color */
+}
+
+.tooltip-arrow {
+    border-top-color: #343a40; /* Dark border for tooltip arrow */
+    border-bottom-color: #343a40;
+}
